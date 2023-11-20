@@ -1,0 +1,10 @@
+temp=float(input("enter the temperarure:"))
+unit=input("Enter the Choice C or F:")
+if unit=='C':
+    faren=(temp*9/5)+32
+    print(temp,"celcius is equal to",faren,"Farenheit")
+elif unit=='F':
+    celcius=(temp-32)*5/9
+    print(temp,"farenheit is equal to",celcius,"Celcius")
+else:
+    print("Invalid Input")
