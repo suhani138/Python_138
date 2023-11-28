@@ -1,0 +1,33 @@
+# function to find the maximum of three numbers
+def max_of_three(num1, num2, num3):
+    if num1 > num2:
+        if num1 > num3:
+            return num1
+        else:
+            return num3
+    else:
+        if num2 > num3:
+            return num2
+        else:
+            return num3
+num1=int(input('enter num1'))
+num2=int(input('enter num2'))
+num3=int(input('enter num3'))
+print('maximum of the numbers is',max_of_three(num1,num2,num3))
+
+# function to check if a number is an Armstrong number
+
+def is_armstrong(num):
+    order = len(str(num))
+    temp = num
+    sum = 0
+    while temp > 0:
+        digit = temp % 10
+        sum += digit ** order
+        temp //= 10
+    if num == sum:
+      print(num,"is an Armstrong number")
+    else:
+      print(num,"is not an Armstrong number")
+num = int(input("Enter a number: "))
+is_armstrong(num)
