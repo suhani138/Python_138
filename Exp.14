@@ -1,0 +1,4 @@
+with open('myfile.txt', 'w') as file:
+    for i in range(3):
+        line = input(f"Enter line {i+1}: ")
+        file.write(line + '\n')
